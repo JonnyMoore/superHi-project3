@@ -11,15 +11,20 @@
         <section class="options">
 
             <h1>Type checker</h1>
+            <div class="option">
+                <label>Your Text</label>
+                <input type="text" name="sentence" placeholder="The quick brown fox...">
+            </div>
+            <div class="option">
+                <label>Type Size<span>64</span></label>
+                <input type="range" name="typesize" min=12 max=200 default=64>
+            </div>
 
         </section>
 
-        <section class="output">
-
-            <p>The quick brown fox jumps over the lazy dog</p>
-
-        </section>
+        <textarea class="output">The quick brown fox jumps over the lazy dog.</textarea>
+        
+        <script src="js/typechecker.js"></script>
 
     </body>
-
 </html>
