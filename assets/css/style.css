@@ -66,9 +66,10 @@ input[type="text"] { /* filter input selector by type of input */
     width: 100%;
     background-color: #fff;
     border: none;
-    color: #f3a78e;
+    color: #111;
     font-weight: 500;
     padding: 5px 7px;
+    
 }
 
 input[type="range"] {
@@ -78,7 +79,7 @@ input[type="range"] {
 textarea.output {
     position: fixed;
     left: 320px;
-    width: 100%; /* TODO: This sends text off screen right */
+    width: 80%; /* TODO: This sends text off screen right when set to 100%*/
     min-height: 100vh;
     background-color: transparent;
     color: #fff;
@@ -86,4 +87,5 @@ textarea.output {
     border: none;
     outline: none;
     margin: 30px 60px;
+    text-shadow: 3px 3px #f3a78e;
 }
