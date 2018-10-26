@@ -1,4 +1,12 @@
+
 const sentenceTag = document.querySelector(`input[type="text"]`)
+
+const typeSizeTag = document.querySelector(`input[name="typesize"]`)
+const typesizeOutputTag = document.querySelector("span.typesize-output")
+
+const lineheightTag = document.querySelector(`input[name="lineheight"]`)
+const lineheightOutputTag = document.querySelector("span.lineheight-output")
+
 const outputTag = document.querySelector("textarea.output")
 const originalText = outputTag.innerHTML
 
@@ -23,3 +31,17 @@ outputTag.addEventListener("keyup", function() {
         outputTag.value = originalText
     }
 })
+
+// when i change my type size slider, update the text next to it AND
+// change the outputTag's font size 
+typeSizeTag.addEventListener("input", function() {
+        outputTag.style.fontSize = this.value + "px"
+        typesizeOutputTag.innerHTML = this.value + "px"
+})
+
+// when i change my leading slider, update the text next to it AND
+// change the outputTag's line height
+lineheightTag.addEventListener("input", function () {
+    outputTag.style.lineHeight = this.value
+    lineheightOutputTag.innerHTML = this.value
+}) 
