@@ -15,6 +15,19 @@
                 <label>Your Text</label>
                 <input type="text" name="sentence" placeholder="I just want to be...">
             </div>
+
+            <div class="option">
+                <label>Typeface</label>
+                <select name="typeface">
+                    <option value="Fira Sans">Fira Sans</option>
+                    <option value="Poppins">Poppins</option>
+                    <option value="Barlow Condensed">Barlow Condensed</option>
+                    <option value="Montserrat Alternates">Montserrat Alternates</option>
+                    <option value="Taviraj">Taviraj</option>
+                    <option value="Trirong">Trirongs</option>
+                </select>
+            </div>
+
             <div class="option">
                 <label>Type Size<span class="typesize-output">64px</span></label>
                 <input type="range" name="typesize" min=12 max=200 default=64>
@@ -25,6 +38,11 @@
                 <input type="range" name="lineheight" min=0.75 max=2.5 default=1.5 step=0.1>
             </div>
 
+            <div class="option option-checkbox">
+                <label>Italic</label>
+                <input type="checkbox" name="italic">
+            </div>
+
         </section>
 
         <textarea class="output">I just want to be a vampire. They're the coolest monsters.</textarea>
@@ -33,3 +51,11 @@
 
     </body>
 </html>
+
+
+<!-- font-family: 'Fira Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Taviraj', serif;
+font-family: 'Trirong', serif; -->
